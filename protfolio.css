@@ -1,0 +1,354 @@
+ /**************************Body*************/
+ body {
+     background-color: #090d19;
+     color: rgb(255, 255, 255);
+     font-family: 'Cormorant SC', serif;
+     background-image: url(BG.jpg);
+     background-size: contain;
+     background-repeat: no-repeat;
+      overflow-x: hidden;
+ }
+
+ #headunderline {
+     height: 2px;
+     background-color: yellow;
+     width: 100%;
+
+ }
+
+ /**************************Navication******************/
+ nav{
+    position: fixed;
+    overflow: hidden;
+ }
+ .navbar {
+     background-color: #090d19;
+     background-image: url(BG.jpg);
+     z-index: 1;
+ }
+#logo5{
+    color: yellow;
+    font-size: x-large;
+}
+ .navbar ul {
+     display: flex;
+     margin-left: 5%;
+     list-style: none;
+ }
+
+ .navbar ul li {
+     margin-left: 15px;
+     background-size: contain;
+     box-shadow: -30px 10px 30px #17203a;
+     font-size: larger;
+     margin-top: 3%;
+     margin-left: 10%;
+ }
+
+ .navbar ul li a:hover {
+     text-decoration-color: yellow;
+     color: yellow;
+     font-size: 20px;
+     font-weight: 800;
+     font-size: x-large;
+ }
+
+ 
+
+ /*****************************Home************************/
+ .container {
+     margin-top: 9%;
+ }
+
+ #name {
+     color: rgb(255, 255, 112);
+ }
+
+ #home {
+     color: rgb(255, 255, 112);
+ }
+ #typed-text{
+    color: rgb(255, 255, 112);
+    text-align: center;
+}
+
+ .homeicon ul li {
+     list-style-type: none;
+     display: inline;
+ }
+
+ .homeicon ul li i {
+     color: rgb(255, 255, 112);
+     font-size: 23px;
+ }
+
+ .homeicon ul li i:hover {
+     color: white;
+     font-size: 30px;
+ }
+
+
+ /****************************about**************************/
+ #about {
+     text-align: center;
+     color: rgb(255, 255, 112);
+     margin-top: 15%;
+ }
+
+ #aboutimg {
+     box-shadow: -30px 10px 50px #17203a;
+     border: solid gray 1px;
+ }
+
+ #aboutdb {
+     background-color: yellow;
+     border: none;
+     color: rgb(255, 255, 255);
+     padding: 8px 16px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 6px 2px;
+     margin-top: 10px;
+     margin-left: 60px;
+     transition-duration: 0.4s;
+     cursor: pointer;
+     font-weight: bolder;
+     box-shadow: -30px 10px 50px #17203a;
+ }
+
+ #aboutdb {
+     background-color: #090d19;
+     color: #ffffff;
+     border: 2px solid rgb(255, 255, 255);
+
+ }
+
+ #aboutdb:hover {
+     background-color: rgb(255, 255, 78);
+     color: rgb(2, 2, 2);
+ }
+
+ .col-sm-8 span {
+     color: rgb(245, 245, 168);
+     font-weight: 550;
+ }
+
+ .col-sm-8 ul {
+     list-style-type: none;
+ }
+
+ 
+ /*************************service*************************/
+ #service {
+     text-align: center;
+     color: rgb(255, 255, 112);
+     margin-bottom: -50%;
+ }
+
+ #e {
+     background-color: #090d19;
+     border: 1px solid #17203a;
+     box-shadow: -30px 10px 50px #17203a;
+     margin-top: 9%;
+ }
+
+ .card:hover {
+     color: rgb(255, 255, 112);
+ }
+
+ .row {
+     display: flex;
+ }
+
+ .card i {
+     font-size: 110px;
+     color: #17203a;
+     margin-top: 10%;
+     margin-bottom: 10%;
+     margin-left: 25%;
+ }
+
+ .card i:hover {
+     color: rgb(255, 255, 112);
+ }
+
+ .card h3 {
+     color: rgb(126, 116, 116);
+     font-weight: bolder;
+ }
+
+ .card p span {
+     color: rgb(255, 255, 112);
+ }
+
+ 
+
+ /****************************MySkill***********************/
+ #MySkills {
+     color: rgb(255, 255, 112);
+     margin-bottom: 20%;
+     text-align: center;
+ }
+
+ #d {
+     padding-top: 20px;
+     background-color: #090d19;
+     border: 3px solid #17203a;
+     box-shadow: -30px 10px 50px #17203a;
+ }
+
+ .progress {
+     width: 100%;
+     height: 3px;
+     margin-top: 30px;
+     background-color: #17203a;
+ }
+
+ 
+
+ /**************************Resume************************/
+ #Resume {
+     text-align: center;
+     color: rgb(255, 255, 112);
+     margin-bottom: -60px;
+     
+ }
+
+.vl {
+     border-left: 2px solid rgb(126, 116, 116);
+     /* height: 550px; */
+     padding: 20px;
+ }
+
+ .vl p{
+    margin: 0px;
+}
+
+ #resumeicon {
+     margin-left: 21%;
+     flex-flow: row; 
+     color: #17203a; 
+     font-size: x-large; 
+     margin-top: 20%;
+ }
+ 
+
+ /**********************Portfolio***************************/
+ #protfolio {
+    text-align: center;
+    color: rgb(255, 255, 112);
+ }
+#ef {
+    width: 300px;
+    height: 260px;
+    margin-top: 10%;
+    background-color: #090d19;
+    border: 3px solid #17203a;
+    box-shadow: -30px 10px 50px #17203a;
+}
+ 
+ /********************blog*********************************/
+ /*#blog {
+     text-align: center;
+     color: rgb(255, 255, 112);
+     margin-top: 70px;
+ }
+*/
+ /**********************Contact***********************************/
+ #contact {
+     text-align: center;
+     color: rgb(255, 255, 112);
+ }
+
+ .vlc {
+     border-left: 2px solid rgb(126, 116, 116);
+     height: 470px;
+ }
+
+ #say {
+     margin-left: 20%;
+     margin-top: 10%;
+ }
+
+ #exampleInputEmail1 {
+     width: 77%;
+     border: solid #17203a;
+     height: 30px;
+     margin-top: 8%;
+     margin-left: 7%;
+ }
+
+ #exampleFormControlTextarea1 {
+     width: 77%;
+     border: solid #17203a;
+     margin-top: 8%;
+     margin-left: 7%;
+ }
+
+ #mesbot {
+     background-color: yellow;
+     border: none;
+     color: rgb(255, 255, 255);
+     padding: 8px 16px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 6px 2px;
+     margin-top: 9%;
+     margin-left: 30%;
+     transition-duration: 0.4s;
+     cursor: pointer;
+     font-weight: bolder;
+     box-shadow: -30px 10px 50px #17203a;
+ }
+
+ #mesbot {
+     background-color: #090d19;
+     color: #ffffff;
+     border: 2px solid rgb(255, 255, 255);
+
+ }
+
+ #mesbot:hover {
+     background-color: rgb(255, 255, 78);
+     color: rgb(2, 2, 2);
+ }
+ #coninfo{
+    flex-flow: row; 
+    margin-left: 70px; 
+    color: #17203a;
+     font-size: xx-large;
+    margin-bottom: 40px;
+ }
+ #says{
+     color:rgb(255, 255, 78);
+     margin-left: 8%;
+ }
+ .vlc p{
+    color: rgb(170, 158, 158);
+    margin-left: 5%;
+ }
+
+ #homePF{
+    border-radius: 50%;
+    border: solid gray 1px;
+ }
+
+
+
+
+ /* Initial state - hidden */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+/* Visible state - smooth transition */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
