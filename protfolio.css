@@ -6,7 +6,7 @@
      background-image: url(BG.jpg);
      background-size: contain;
      background-repeat: no-repeat;
-      overflow-x: hidden;
+     overflow-x: hidden;
  }
 
  #headunderline {
@@ -15,21 +15,25 @@
      width: 100%;
 
  }
+ 
 
  /**************************Navication******************/
- nav{
-    position: fixed;
-    overflow: hidden;
+ nav {
+     position: fixed;
+     overflow: hidden;
  }
+
  .navbar {
      background-color: #090d19;
      background-image: url(BG.jpg);
      z-index: 1;
  }
-#logo5{
-    color: yellow;
-    font-size: x-large;
-}
+
+ #logo5 {
+     color: yellow;
+     font-size: x-large;
+ }
+
  .navbar ul {
      display: flex;
      margin-left: 5%;
@@ -53,7 +57,7 @@
      font-size: x-large;
  }
 
- 
+
 
  /*****************************Home************************/
  .container {
@@ -67,10 +71,11 @@
  #home {
      color: rgb(255, 255, 112);
  }
- #typed-text{
-    color: rgb(255, 255, 112);
-    text-align: center;
-}
+
+ #typed-text {
+     color: rgb(255, 255, 112);
+     text-align: center;
+ }
 
  .homeicon ul li {
      list-style-type: none;
@@ -86,6 +91,43 @@
      color: white;
      font-size: 30px;
  }
+
+
+
+
+ /* Smooth fade-in from below */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Typing text animation color */
+#typed-text {
+  color: rgb(255, 255, 112);
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Cormorant SC', serif;
+}
+
+/* Add hover transition to social icons */
+.homeicon ul li i {
+  color: rgb(255, 255, 112);
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+
+.homeicon ul li i:hover {
+  color: white;
+  font-size: 30px;
+}
 
 
  /****************************about**************************/
@@ -139,7 +181,60 @@
      list-style-type: none;
  }
 
+
+ /* Animation base state */
+.animate-about {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+/* When in view */
+.animate-about.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate-image {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-image.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.animate-image {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-image.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
  
+
+/* Animation base */
+.skill-left {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+/* When visible in viewport */
+.skill-left.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+ 
+
+
  /*************************service*************************/
  #service {
      text-align: center;
@@ -182,8 +277,37 @@
  .card p span {
      color: rgb(255, 255, 112);
  }
+/* Smooth scroll animation for service cards */
+#e {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
 
- 
+#e.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional glow and lift on hover */
+#e:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(255, 255, 112, 0.3);
+  color: rgb(255, 255, 112);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Icon hover pulse effect */
+#i i {
+  transition: transform 0.4s ease;
+}
+
+#i i:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 112);
+}
+
+
 
  /****************************MySkill***********************/
  #MySkills {
@@ -206,49 +330,169 @@
      background-color: #17203a;
  }
 
- 
+#MySkills {
+  color: rgb(255, 255, 112);
+  text-align: center;
+  font-family: 'Cormorant SC', serif;
+  margin-bottom: 10%;
+}
+
+#d {
+  padding: 20px;
+  background-color: #090d19;
+  border: 3px solid #17203a;
+  box-shadow: -30px 10px 50px #17203a;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+#d.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-bar h3 {
+  font-family: 'Cormorant SC', serif;
+  color: rgb(255, 255, 112);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.progress {
+  width: 100%;
+  height: 3px;
+  background-color: #17203a;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0 ;
+  transition: width 2s ease-out;
+}
+
 
  /**************************Resume************************/
  #Resume {
      text-align: center;
      color: rgb(255, 255, 112);
      margin-bottom: -60px;
-     
+
  }
 
-.vl {
+ .vl {
      border-left: 2px solid rgb(126, 116, 116);
      /* height: 550px; */
      padding: 20px;
  }
 
- .vl p{
-    margin: 0px;
-}
+ .vl p {
+     margin: 0px;
+ }
 
  #resumeicon {
      margin-left: 21%;
-     flex-flow: row; 
-     color: #17203a; 
-     font-size: x-large; 
+     flex-flow: row;
+     color: #17203a;
+     font-size: x-large;
      margin-top: 20%;
  }
- 
+
+
+
+ /* === Resume animation base === */
+.resume-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.resume-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
  /**********************Portfolio***************************/
  #protfolio {
-    text-align: center;
-    color: rgb(255, 255, 112);
+     text-align: center;
+     color: rgb(255, 255, 112);
  }
-#ef {
-    width: 300px;
-    height: 260px;
+
+ /* #ef {
+     width: 20rem;
+     height: 260px; 
+     margin-top: 10%;
+     background-color: #090d19;
+     border: 3px solid #17203a;
+     box-shadow: -30px 10px 50px #17203a;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ #ef:hover {
+     transform: translateY(-8px) scale(1.03);
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+ } */
+
+ .ef {
+    width: 20rem;
     margin-top: 10%;
     background-color: #090d19;
     border: 3px solid #17203a;
-    box-shadow: -30px 10px 50px #17203a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
- 
+#e {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s ease-out;
+}
+
+
+.ef:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.ef img {
+    box-shadow: -30px 10px 50px #17203a;
+    transition: transform 0.3s ease;
+    width: 100%;
+    display: block;
+}
+
+.ef:hover img {
+    transform: scale(1.05);
+}
+.ef {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.ef.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Initial animation state */
+
+/* Visible animation state */
+#e.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
  /********************blog*********************************/
  /*#blog {
      text-align: center;
@@ -257,6 +501,53 @@
  }
 */
  /**********************Contact***********************************/
+
+/* Animate when element enters viewport */
+.vlc,
+#say,
+#says {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.vlc.visible,
+#say.visible,
+#says.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Animate button hover */
+#mesbot {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#mesbot:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 112, 0.5);
+}
+/* General animation base */
+.animate-on-scroll {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* Optional: animate from left or right */
+.animate-left {
+  transform: translateX(-40px);
+}
+
+.animate-right {
+  transform: translateX(40px);
+}
+
+
  #contact {
      text-align: center;
      color: rgb(255, 255, 112);
@@ -316,39 +607,48 @@
      background-color: rgb(255, 255, 78);
      color: rgb(2, 2, 2);
  }
- #coninfo{
-    flex-flow: row; 
-    margin-left: 70px; 
-    color: #17203a;
+
+ #coninfo {
+     flex-flow: row;
+     margin-left: 70px;
+     color: #17203a;
      font-size: xx-large;
-    margin-bottom: 40px;
- }
- #says{
-     color:rgb(255, 255, 78);
-     margin-left: 8%;
- }
- .vlc p{
-    color: rgb(170, 158, 158);
-    margin-left: 5%;
+     margin-bottom: 40px;
  }
 
- #homePF{
-    border-radius: 50%;
-    border: solid gray 1px;
+ #says {
+     color: rgb(255, 255, 78);
+     margin-left: 8%;
+ }
+
+ .vlc p {
+     color: rgb(170, 158, 158);
+     margin-left: 5%;
+ }
+
+ #homePF {
+     border-radius: 50%;
+     border: solid gray 1px;
  }
 
 
 
 
  /* Initial state - hidden */
-.hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
-}
+ .hidden {
+     opacity: 0;
+     transform: translateY(20px);
+     transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+ }
 
-/* Visible state - smooth transition */
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+ /* Visible state - smooth transition */
+ .visible {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+
+
+
+
+ 
