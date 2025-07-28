@@ -15,40 +15,77 @@ body {
   width: 100%;
 }
 
-/******************** NAVIGATION ********************/
-nav {
-  position: fixed;
-  overflow: hidden;
-  z-index: 1;
+/* General navbar style */
+.custom-navbar {
+  background: rgba(9, 13, 25, 0.85); /* Semi-transparent for glass effect */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  z-index: 999;
 }
 
-.navbar {
-  background-color: #090d19;
-  background-image: url(BG.jpg);
+/* Brand logo */
+.brand-logo {
+  font-size: 1.5rem;
+  color: #ccc;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-#logo5 {
-  color: yellow;
-  font-size: x-large;
+.brand-logo:hover {
+  color: #fff;
 }
 
-.navbar ul {
-  display: flex;
-  list-style: none;
-  margin-left: 5%;
+/* Navigation links */
+.nav-link {
+  color: #f0f0f0;
+  font-weight: 500;
+  position: relative;
+  margin: 0 10px;
+  padding: 8px 0;
+  transition: all 0.3s ease-in-out;
 }
 
-.navbar ul li {
-  margin: 3% 10% 0 0;
-  font-size: larger;
-  box-shadow: -30px 10px 30px #17203a;
+/* Animated underline on hover */
+.nav-animated::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: rgb(255, 255, 112);
+  transition: width 0.4s ease-in-out;
 }
 
-.navbar ul li a:hover {
-  color: yellow;
-  font-size: x-large;
-  font-weight: 800;
-  text-decoration-color: yellow;
+.nav-animated:hover::after {
+  width: 100%;
+}
+
+.nav-animated:hover {
+  color: rgb(255, 255, 112);
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+/* Responsive nav-item spacing */
+.navbar-nav .nav-item {
+  padding: 0 5px;
+}
+
+/* Adjust toggler icon color */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f0f0f0' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(240, 240, 240, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Optional: Scroll shrink effect */
+.custom-navbar.scrolled {
+  background: rgba(9, 13, 25, 0.95);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
 }
 
 /******************** HOME ********************/
@@ -56,7 +93,9 @@ nav {
   margin-top: 10%;
 }
 
-#name, #home, #typed-text {
+#name,
+#home,
+#typed-text {
   color: rgb(255, 255, 112);
   text-align: center;
   font-size: 2rem;
@@ -84,7 +123,15 @@ nav {
 }
 
 /******************** ANIMATIONS ********************/
-.hidden, .ef, .animate-on-scroll, .animate-about, .animate-image, .skill-left, .resume-animate, #e, #d {
+.hidden,
+.ef,
+.animate-on-scroll,
+.animate-about,
+.animate-image,
+.skill-left,
+.resume-animate,
+#e,
+#d {
   opacity: 0;
   transition: all 0.8s ease-out;
 }
@@ -98,7 +145,9 @@ nav {
   transform: translateY(20px);
 }
 
-.animate-about, .resume-animate, .skill-left {
+.animate-about,
+.resume-animate,
+.skill-left {
   transform: translateY(40px);
 }
 
@@ -125,7 +174,10 @@ nav {
 .profile-wrapper::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: auto;
   border-radius: 50%;
   border: 2px solid transparent;
@@ -135,8 +187,13 @@ nav {
 }
 
 @keyframes spinRing {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .profile-wrapper img {
@@ -334,8 +391,6 @@ nav {
 }
 
 #say {
-  margin-left: 20%;
-  margin-top: 10%;
   font-size: xx-large;
   color: #17203a;
 }
@@ -345,15 +400,24 @@ nav {
   margin-left: 8%;
 }
 
+
 .vlc {
-  border-left: 2px solid rgb(126, 116, 116);
-  height: 470px;
+  width: 60%;
   padding: 1px;
 }
 
 .vlc p {
   color: rgb(170, 158, 158);
   margin-left: 5%;
+}
+
+.vlc form {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
 #exampleInputEmail1,
@@ -374,7 +438,7 @@ nav {
   border: 2px solid #fff;
   padding: 8px 16px;
   font-size: 16px;
-  margin: 9% 2% 0 30%;
+  /* margin: 9% 2% 0 30%; */
   font-weight: bold;
   cursor: pointer;
   box-shadow: -30px 10px 50px #17203a;
@@ -387,7 +451,14 @@ nav {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 255, 112, 0.5);
 }
-
+.form-control:focus{
+  color:white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.form-control {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 
 /******************** RESPONSIVE ********************/
@@ -414,13 +485,18 @@ nav {
     margin-bottom: 27%;
   }
 }
-#e, #d, .ef {
+
+#e,
+#d,
+.ef {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease-out;
 }
 
-#e.visible, #d.visible, .ef.visible {
+#e.visible,
+#d.visible,
+.ef.visible {
   opacity: 1;
   transform: translateY(0);
 }
