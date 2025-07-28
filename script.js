@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     '#pro2 .progress-bar': '70%',
     '#pro3 .progress-bar': '70%',
     '#pro4 .progress-bar': '40%',
-    '#pro5 .progress-bar': '45%'
+    '#pro5 .progress-bar': '65%'
   };
   if (skillBox) {
     const skillObserver = new IntersectionObserver((entries) => {
