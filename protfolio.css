@@ -1,253 +1,131 @@
- /**************************Body*************/
- body {
-   background-color: #090d19;
-   color: rgb(255, 255, 255);
-   font-family: 'Cormorant SC', serif;
-   background-image: url(BG.jpg);
-   background-size: contain;
-   background-repeat: no-repeat;
-   overflow-x: hidden;
- }
+/******************** GLOBAL STYLES ********************/
+body {
+  background-color: #090d19;
+  color: #fff;
+  font-family: 'Cormorant SC', serif;
+  background-image: url(BG.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
 
- #headunderline {
-   height: 2px;
-   background-color: yellow;
-   width: 100%;
+#headunderline {
+  height: 2px;
+  background-color: yellow;
+  width: 100%;
+}
 
- }
+/******************** NAVIGATION ********************/
+nav {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+}
 
+.navbar {
+  background-color: #090d19;
+  background-image: url(BG.jpg);
+}
 
- /**************************Navication******************/
- nav {
-   position: fixed;
-   overflow: hidden;
- }
+#logo5 {
+  color: yellow;
+  font-size: x-large;
+}
 
- .navbar {
-   background-color: #090d19;
-   background-image: url(BG.jpg);
-   z-index: 1;
- }
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin-left: 5%;
+}
 
- #logo5 {
-   color: yellow;
-   font-size: x-large;
- }
+.navbar ul li {
+  margin: 3% 10% 0 0;
+  font-size: larger;
+  box-shadow: -30px 10px 30px #17203a;
+}
 
- .navbar ul {
-   display: flex;
-   margin-left: 5%;
-   list-style: none;
- }
+.navbar ul li a:hover {
+  color: yellow;
+  font-size: x-large;
+  font-weight: 800;
+  text-decoration-color: yellow;
+}
 
- .navbar ul li {
-   margin-left: 15px;
-   background-size: contain;
-   box-shadow: -30px 10px 30px #17203a;
-   font-size: larger;
-   margin-top: 3%;
-   margin-left: 10%;
- }
+/******************** HOME ********************/
+.container {
+  margin-top: 10%;
+}
 
- .navbar ul li a:hover {
-   text-decoration-color: yellow;
-   color: yellow;
-   font-size: 20px;
-   font-weight: 800;
-   font-size: x-large;
- }
+#name, #home, #typed-text {
+  color: rgb(255, 255, 112);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+.homeicon ul {
+  padding-left: 0;
+}
 
+.homeicon ul li {
+  list-style: none;
+  display: inline;
+}
 
- /*****************************Home************************/
- .container {
-   margin-top: 10%;
- }
+.homeicon ul li i {
+  color: rgb(255, 255, 112);
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
 
- #name {
-   color: rgb(255, 255, 112);
- }
+.homeicon ul li i:hover {
+  color: white;
+  font-size: 30px;
+}
 
- #home {
-   color: rgb(255, 255, 112);
- }
+/******************** ANIMATIONS ********************/
+.hidden, .ef, .animate-on-scroll, .animate-about, .animate-image, .skill-left, .resume-animate, #e, #d {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
 
- #typed-text {
-   color: rgb(255, 255, 112);
-   text-align: center;
- }
+.visible {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
 
- .homeicon ul li {
-   list-style-type: none;
-   display: inline;
- }
+.hidden {
+  transform: translateY(20px);
+}
 
- .homeicon ul li i {
-   color: rgb(255, 255, 112);
-   font-size: 23px;
- }
+.animate-about, .resume-animate, .skill-left {
+  transform: translateY(40px);
+}
 
- .homeicon ul li i:hover {
-   color: white;
-   font-size: 30px;
- }
+.animate-image {
+  transform: translateX(-40px);
+}
 
+.animate-left {
+  transform: translateX(-40px);
+}
 
+.animate-right {
+  transform: translateX(40px);
+}
 
-
- /* Smooth fade-in from below */
- .hidden {
-   opacity: 0;
-   transform: translateY(20px);
-   transition: all 0.8s ease-out;
- }
-
- .visible {
-   opacity: 1;
-   transform: translateY(0);
- }
-
- /* Typing text animation color */
- #typed-text {
-   color: rgb(255, 255, 112);
-   text-align: center;
-   font-size: 2rem;
-   margin-top: 20px;
-   font-weight: bold;
-   font-family: 'Cormorant SC', serif;
- }
-
- /* Add hover transition to social icons */
- .homeicon ul li i {
-   color: rgb(255, 255, 112);
-   font-size: 23px;
-   transition: all 0.3s ease;
- }
-
- .homeicon ul li i:hover {
-   color: white;
-   font-size: 30px;
- }
-
-
- /****************************about**************************/
- #about {
-   text-align: center;
-   color: rgb(255, 255, 112);
-   /* margin-top: 15%; */
- }
-
- #aboutimg {
-   box-shadow: -30px 10px 50px #17203a;
-   border: solid gray 1px;
- }
-
- #aboutdb {
-   background-color: yellow;
-   border: none;
-   color: rgb(255, 255, 255);
-   padding: 8px 16px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 6px 2px;
-   margin-top: 10px;
-   margin-left: 60px;
-   transition-duration: 0.4s;
-   cursor: pointer;
-   font-weight: bolder;
-   box-shadow: -30px 10px 50px #17203a;
- }
-
- #aboutdb {
-   background-color: #090d19;
-   color: #ffffff;
-   border: 2px solid rgb(255, 255, 255);
-
- }
-
- #aboutdb:hover {
-   background-color: rgb(255, 255, 78);
-   color: rgb(2, 2, 2);
- }
-
- .col-sm-8 span {
-   color: rgb(245, 245, 168);
-   font-weight: 550;
- }
-
- .col-sm-8 ul {
-   list-style-type: none;
- }
-
-
- /* Animation base state */
- .animate-about {
-   opacity: 0;
-   transform: translateY(40px);
-   transition: all 0.8s ease-out;
- }
-
- /* When in view */
- .animate-about.visible {
-   opacity: 1;
-   transform: translateY(0);
- }
-
- .animate-image {
-   opacity: 0;
-   transform: translateX(-40px);
-   transition: all 0.8s ease-out;
- }
-
- .animate-image.visible {
-   opacity: 1;
-   transform: translateX(0);
- }
-
-
- .animate-image {
-   opacity: 0;
-   transform: translateX(-40px);
-   transition: all 0.8s ease-out;
- }
-
- .animate-image.visible {
-   opacity: 1;
-   transform: translateX(0);
- }
-
-
-
- /* Animation base */
- .skill-left {
-   opacity: 0;
-   transform: translateY(50px);
-   transition: all 0.8s ease-out;
- }
-
- /* When visible in viewport */
- .skill-left.visible {
-   opacity: 1;
-   transform: translateY(0);
- }
-
-
- .profile-wrapper {
+/******************** PROFILE RING ANIMATION ********************/
+.profile-wrapper {
   position: relative;
   display: inline-block;
-  padding: 2px; /* space for ring */
+  padding: 2px;
   border-radius: 50%;
 }
 
 .profile-wrapper::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   margin: auto;
   border-radius: 50%;
   border: 2px solid transparent;
@@ -257,437 +135,292 @@
 }
 
 @keyframes spinRing {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .profile-wrapper img {
   display: block;
   width: 100%;
-  height: auto;
   border-radius: 50%;
-  z-index: 2;
   position: relative;
+  z-index: 2;
   box-shadow: -30px 10px 40px #17203a;
 }
 
-
-
-
- /*************************service*************************/
- #service {
-   text-align: center;
-   color: rgb(255, 255, 112);
-   margin-bottom: -50%;
- }
-
- #e {
-   background-color: #090d19;
-   border: 1px solid #17203a;
-   box-shadow: -30px 10px 50px #17203a;
-   margin-top: 9%;
- }
-
- .card:hover {
-   color: rgb(255, 255, 112);
- }
-
- .row {
-   display: flex;
- }
-
- .card i {
-   font-size: 110px;
-   color: #17203a;
-   margin-top: 10%;
-   margin-bottom: 10%;
-   margin-left: 25%;
- }
-
- .card i:hover {
-   color: rgb(255, 255, 112);
- }
-
- .card h3 {
-   color: rgb(126, 116, 116);
-   font-weight: bolder;
- }
-
- .card p span {
-   color: rgb(255, 255, 112);
- }
-
- /* Smooth scroll animation for service cards */
- #e {
-   opacity: 0;
-   transform: translateY(40px);
-   transition: all 0.8s ease-out;
- }
-
- #e.visible {
-   opacity: 1;
-   transform: translateY(0);
- }
-
- /* Optional glow and lift on hover */
- #e:hover {
-   transform: translateY(-8px) scale(1.03);
-   box-shadow: 0 12px 24px rgba(255, 255, 112, 0.3);
-   color: rgb(255, 255, 112);
-   transition: all 0.4s ease-in-out;
- }
-
- /* Icon hover pulse effect */
- #i i {
-   transition: transform 0.4s ease;
- }
-
- #i i:hover {
-   transform: scale(1.1);
-   color: rgb(255, 255, 112);
- }
-
-
-
- /****************************MySkill***********************/
- #MySkills {
-   color: rgb(255, 255, 112);
-   margin-bottom: 20%;
-   text-align: center;
- }
-
- #d {
-   padding-top: 20px;
-   background-color: #090d19;
-   border: 3px solid #17203a;
-   box-shadow: -30px 10px 50px #17203a;
- }
-
- .progress {
-   width: 100%;
-   height: 3px;
-   margin-top: 30px;
-   background-color: #17203a;
- }
-
- #MySkills {
-   color: rgb(255, 255, 112);
-   text-align: center;
-   font-family: 'Cormorant SC', serif;
-   margin: 0px;
- }
-
- #d {
-   padding: 20px;
-   background-color: #090d19;
-   border: 3px solid #17203a;
-   box-shadow: -30px 10px 50px #17203a;
-   opacity: 0;
-   transform: translateY(30px);
-   transition: all 0.8s ease;
- }
-
- #d.visible {
-   opacity: 1;
-   transform: translateY(0);
- }
-
- .skill-bar h3 {
-   font-family: 'Cormorant SC', serif;
-   color: rgb(255, 255, 112);
-   display: flex;
-   justify-content: space-between;
-   font-size: 1.2rem;
-   margin-top: 20px;
- }
-
- .progress {
-   width: 100%;
-   height: 3px;
-   background-color: #17203a;
-   overflow: hidden;
- }
-
- .progress-bar {
-   width: 0;
-   transition: width 2s ease-out;
- }
-
-
- /**************************Resume************************/
- #Resume {
-   text-align: center;
-   color: rgb(255, 255, 112);
-   margin-bottom: -60px;
-
- }
-
- .vl {
-   border-left: 2px solid rgb(126, 116, 116);
-   /* height: 550px; */
-   padding: 20px;
- }
-
- .vl p {
-   margin: 0px;
- }
-
- #resumeicon {
-   margin-left: 21%;
-   flex-flow: row;
-   color: #17203a;
-   font-size: x-large;
-   margin-top: 20%;
- }
-
-
-
- /* === Resume animation base === */
- .resume-animate {
-   opacity: 0;
-   transform: translateY(40px);
-   transition: all 0.8s ease;
- }
-
- .resume-animate.visible {
-   opacity: 1;
-   transform: translateY(0);
- }
-
-
- /**********************Portfolio***************************/
- #protfolio {
-   text-align: center;
-   color: rgb(255, 255, 112);
- }
-
-
- .ef {
-   width: 20rem;
-   margin-top: 10%;
-   background-color: #090d19;
-   border: 3px solid #17203a;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   border-radius: 10px;
-   overflow: hidden;
-   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
- }
-
- #e {
-   opacity: 0;
-   transform: scale(0.9);
-   transition: all 0.6s ease-out;
- }
-
-
- .ef:hover {
-   transform: translateY(-8px) scale(1.03);
-   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
- }
-
- .ef img {
-   box-shadow: -30px 10px 50px #17203a;
-   transition: transform 0.3s ease;
-   width: 100%;
-   display: block;
- }
-
- .ef:hover img {
-   transform: scale(1.05);
- }
-
- .ef {
-   opacity: 0;
-   transform: translateY(50px);
-   transition: all 0.6s ease-out;
- }
-
- .ef.visible {
-   opacity: 1;
-   transform: translateY(0);
- }
-
-
- /* Initial animation state */
-
- /* Visible animation state */
- #e.visible {
-   opacity: 1;
-   transform: scale(1);
- }
-
-
-
- /**********************Contact***********************************/
-
- /* Animate when element enters viewport */
- .vlc,
- #say,
- #says {
-   opacity: 0;
-   transform: translateY(30px);
-   transition: all 0.8s ease-out;
- }
-
- .vlc.visible,
- #say.visible,
- #says.visible {
-   opacity: 1;
-   transform: translateY(0);
- }
-
- /* Optional: Animate button hover */
- #mesbot {
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
- }
-
- #mesbot:hover {
-   transform: scale(1.05);
-   box-shadow: 0 0 20px rgba(255, 255, 112, 0.5);
- }
-
- /* General animation base */
- .animate-on-scroll {
-   opacity: 0;
-   transition: all 0.8s ease-out;
- }
-
- .animate-on-scroll.visible {
-   opacity: 1;
-   transform: translateX(0) translateY(0);
- }
-
- /* Optional: animate from left or right */
- .animate-left {
-   transform: translateX(-40px);
- }
-
- .animate-right {
-   transform: translateX(40px);
- }
-
-
- #contact {
-   text-align: center;
-   color: rgb(255, 255, 112);
- }
-
- .vlc {
-   border-left: 2px solid rgb(126, 116, 116);
-   height: 470px;
- }
-
- #say {
-   margin-left: 20%;
-   margin-top: 10%;
- }
-
- #exampleInputEmail1 {
-   width: 77%;
-   border: solid #17203a;
-   height: 30px;
-   margin-top: 8%;
-   margin-left: 7%;
- }
-
- #exampleFormControlTextarea1 {
-   width: 77%;
-   border: solid #17203a;
-   margin-top: 8%;
-   margin-left: 7%;
- }
-
- #mesbot {
-   background-color: yellow;
-   border: none;
-   color: rgb(255, 255, 255);
-   padding: 8px 16px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 6px 2px;
-   margin-top: 9%;
-   margin-left: 30%;
-   transition-duration: 0.4s;
-   cursor: pointer;
-   font-weight: bolder;
-   box-shadow: -30px 10px 50px #17203a;
- }
-
- #mesbot {
-   background-color: #090d19;
-   color: #ffffff;
-   border: 2px solid rgb(255, 255, 255);
-
- }
-
- #mesbot:hover {
-   background-color: rgb(255, 255, 78);
-   color: rgb(2, 2, 2);
- }
-
- #coninfo {
-   flex-flow: row;
-   margin-left: 70px;
-   color: #17203a;
-   font-size: xx-large;
-   margin-bottom: 40px;
- }
-
- #says {
-   color: rgb(255, 255, 78);
-   margin-left: 8%;
- }
-
- .vlc p {
-   color: rgb(170, 158, 158);
-   margin-left: 5%;
- }
-
- #homePF {
-   border-radius: 50%;
-   border: solid gray 1px;
- }
-
-
-
-
- /* Initial state - hidden */
- .hidden {
-   opacity: 0;
-   transform: translateY(20px);
-   transition: opacity 0.9s ease-out, transform 0.9s ease-out;
- }
-
- /* Visible state - smooth transition */
- .visible {
-   opacity: 1;
-   transform: translateY(0);
- }
-
-
- @media (max-width: 787px) {
- .container{
-  margin-top: 25%;
- }
+/******************** ABOUT ********************/
+#about {
+  text-align: center;
+  color: rgb(255, 255, 112);
 }
- @media (min-width: 1170px) {
+
+#aboutimg {
+  box-shadow: -30px 10px 50px #17203a;
+  border: solid gray 1px;
+}
+
+#aboutdb {
+  background-color: #090d19;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin: 10px 2px 0 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: -30px 10px 50px #17203a;
+}
+
+#aboutdb:hover {
+  background-color: rgb(255, 255, 78);
+  color: #020202;
+}
+
+.col-sm-8 span {
+  color: rgb(245, 245, 168);
+  font-weight: 550;
+}
+
+.col-sm-8 ul {
+  list-style-type: none;
+}
+
+/******************** SERVICE ********************/
+#service {
+  text-align: center;
+  color: rgb(255, 255, 112);
+  margin-bottom: -50%;
+}
+
+#e {
+  background-color: #090d19;
+  border: 1px solid #17203a;
+  box-shadow: -30px 10px 50px #17203a;
+  margin-top: 9%;
+  transform: scale(0.9);
+  transition: all 0.6s ease-out;
+}
+
+#e.visible {
+  transform: scale(1);
+}
+
+.card:hover {
+  color: rgb(255, 255, 112);
+}
+
+.card i {
+  font-size: 110px;
+  color: #17203a;
+  margin: 10% 0 10% 25%;
+  transition: transform 0.4s ease;
+}
+
+.card i:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 112);
+}
+
+.card h3 {
+  color: rgb(126, 116, 116);
+  font-weight: bold;
+}
+
+/******************** SKILLS ********************/
+#MySkills {
+  text-align: center;
+  color: rgb(255, 255, 112);
+  margin: 0;
+}
+
+#d {
+  padding: 20px;
+  background-color: #090d19;
+  border: 3px solid #17203a;
+  box-shadow: -30px 10px 50px #17203a;
+  transform: translateY(30px);
+}
+
+#d.visible {
+  transform: translateY(0);
+}
+
+.skill-bar h3 {
+  color: rgb(255, 255, 112);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.progress {
+  width: 100%;
+  height: 3px;
+  background-color: #17203a;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.progress-bar {
+  width: 0;
+  transition: width 2s ease-out;
+}
+
+/******************** RESUME ********************/
+#Resume {
+  text-align: center;
+  color: rgb(255, 255, 112);
+  margin-bottom: -60px;
+}
+
+#resumeicon {
+  margin-left: 21%;
+  font-size: x-large;
+  color: #17203a;
+  margin-top: 20%;
+}
+
+.vl {
+  border-left: 2px solid rgb(126, 116, 116);
+  padding: 20px;
+}
+
+.vl p {
+  margin: 0;
+}
+
+/******************** PORTFOLIO ********************/
+#protfolio {
+  text-align: center;
+  color: rgb(255, 255, 112);
+}
+
+.ef {
+  width: 20rem;
+  margin-top: 10%;
+  background-color: #090d19;
+  border: 3px solid #17203a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(50px);
+}
+
+.ef img {
+  box-shadow: -30px 10px 50px #17203a;
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.ef:hover img {
+  transform: scale(1.05);
+}
+
+.ef:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.ef.visible {
+  transform: translateY(0);
+}
+
+/******************** CONTACT ********************/
+#contact {
+  text-align: center;
+  color: rgb(255, 255, 112);
+}
+
+#say {
+  margin-left: 20%;
+  margin-top: 10%;
+  font-size: xx-large;
+  color: #17203a;
+}
+
+#says {
+  color: rgb(255, 255, 78);
+  margin-left: 8%;
+}
+
+.vlc {
+  border-left: 2px solid rgb(126, 116, 116);
+  height: 470px;
+  padding: 1px;
+}
+
+.vlc p {
+  color: rgb(170, 158, 158);
+  margin-left: 5%;
+}
+
+#exampleInputEmail1,
+#exampleFormControlTextarea1 {
+  width: 77%;
+  border: solid #17203a;
+  margin-left: 7%;
+  margin-top: 8%;
+}
+
+#exampleFormControlTextarea1 {
+  height: 100px;
+}
+
+#mesbot {
+  background-color: #090d19;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin: 9% 2% 0 30%;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: -30px 10px 50px #17203a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#mesbot:hover {
+  background-color: rgb(255, 255, 78);
+  color: #020202;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 112, 0.5);
+}
+
+
+
+/******************** RESPONSIVE ********************/
+@media (max-width: 787px) {
+  .container {
+    margin-top: 25%;
+  }
+}
+
+@media (min-width: 1170px) {
   #pro-con {
     margin-bottom: 14%;
   }
 }
- @media (min-width: 1485px) {
+
+@media (min-width: 1485px) {
   #pro-con {
     margin-bottom: 20%;
   }
 }
- @media (min-width: 1965px) {
+
+@media (min-width: 1965px) {
   #pro-con {
     margin-bottom: 27%;
   }
+}
+#e, #d, .ef {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+#e.visible, #d.visible, .ef.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

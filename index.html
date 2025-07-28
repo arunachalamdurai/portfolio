@@ -22,7 +22,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+
     <link rel="stylesheet" href="protfolio.css">
 </head>
 
@@ -138,38 +138,13 @@
                 <h1 id="service">SERVICE</h1>
             </div>
         </div>
-        <div class="row justify-content-around">
-            <div class="card" id="e" style="width: 20rem;">
-                <div class="card-body">
-                    <div id="i">
-                        <i id="pop" class="fa-solid fa-code"></i>
-                        <h3 align="center">web designing</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="e" style="width: 20rem;">
-                <div class="card-body">
-                    <div id="i">
-                        <i class="fa-solid fa-sliders"></i>
-                        <h3 align="center">photoshop</h3>
-
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="e" style="width: 20rem;">
-                <div class="card-body">
-                    <div id="i">
-                        <i class="fa-solid fa-scissors"></i>
-                        <h3 align="center">editing</h3>
-
-                    </div>
-                </div>
-            </div>
+        <div class="row justify-content-around" id="serviceCards">
+            <!-- Cards will be injected here by JS -->
         </div>
     </div>
     <hr style="color:  #17203a; height: 2px; margin-bottom: -60px; margin-top: 30px;">
-    
-    
+
+
     <!-- MY SKILLS -->
     <div class="container">
         <div class="row justify-content-center mb-5">
@@ -194,56 +169,17 @@
             </div>
 
             <!-- Right Progress Bars -->
+
             <div class="col-md-6 mb-4">
                 <div id="d">
-
-                    <div class="skill-bar">
-                        <h3>Python <span>65%</span></h3>
-                        <div class="progress" id="pro5">
-                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
-                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar">
-                        <h3>HTML <span>75%</span></h3>
-                        <div class="progress" id="pro1">
-                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
-                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar">
-                        <h3>CSS <span>70%</span></h3>
-                        <div class="progress" id="pro2">
-                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
-                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar">
-                        <h3>JavaScript <span>70%</span></h3>
-                        <div class="progress" id="pro3">
-                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
-                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar">
-                        <h3>MySQL <span>40%</span></h3>
-                        <div class="progress" id="pro4">
-                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
-                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-
+                    <!-- Skill bars will be injected by JS -->
                 </div>
             </div>
         </div>
     </div>
     <hr style="color:  #17203a; height: 2px; margin-bottom: -90px;">
-    
-    
+
+
     <!--Resume-->
     <div class="container">
         <div class="row justify-content-around">
@@ -251,63 +187,25 @@
                 <h1 id="Resume">RESUME</h1>
             </div>
             <div class="row justify-content-between">
-                <div class="col-sm-6">
-                    <i id="resumeicon" class="fa-solid fa-user-graduate"><span
-                            style="font-family: 'Cormorant SC', serif; color:  rgb(255, 255, 112);">
-                            Education</span></i>
-                    <div class="vl" style="box-shadow: -30px 10px 50px #17203a;">
-
-                        <p style="text-align: center; color: rgb(255, 255, 112); ">SRM Valliammai Engineering College
-                        </p>
-                        <p style="text-align: center;">Bachelor Of Computer Science And Engineering</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">Anna University</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">2024-2027</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">(pursuing)</p>
-
-                        <p style="text-align: center; color: rgb(255, 255, 112); ">Government polytechnic Collage in
-                            thuvakudimalai</p>
-                        <p style="text-align: center;">DIPLOMA in Computer Engineering</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">Dote</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">2020-2023</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">76%</p>
-
-                        <p style="text-align: center; color: rgb(255, 255, 112); ">Govt. Boys Hr Sec School Alangudi
-                        </p>
-                        <p style="text-align: center;">SSLC</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">State Board</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">March 2017</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">57%</p>
-                    </div>
-
+                <div class="col-sm-6" id="education-col">
+                    <i id="resumeicon" class="fa-solid fa-user-graduate">
+                        <span style="font-family: 'Cormorant SC', serif; color:  rgb(255, 255, 112);">Education</span>
+                    </i>
+                    <div class="vl" style="box-shadow: -30px 10px 50px #17203a;" id="education-content"></div>
                 </div>
-                <div class="col-sm-6">
-                    <i id="resumeicon" class="fa-solid fa-briefcase"><span
-                            style="font-family: 'Cormorant SC', serif; color:  rgb(255, 255, 112);">
-                            Experience</span></i>
-                    <div class="vl" style="box-shadow: -30px 10px 50px #17203a;">
-                        <br>
-                        <p style="text-align: center; color: rgb(255, 255, 112);">HIGH LIFE.AI pvt.</p>
-                        <p style="text-align: center;">Completed one-month internship</p>
-                        <p style="text-align: center; color: rgb(170, 158, 158);">HDML,CSS</p>
-                        <p style="text-align: center; color: rgb(170, 158, 158);">Bootstrap,</p>
-                        <p style="text-align: center; color: rgb(170, 158, 158);">JavaScript</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">from 1st july 2022 to 30th july 2022
-                        </p>
-                        <br>
-                        <p style="text-align: center; color: rgb(255, 255, 112);">DCKAP</p>
-                        <p style="text-align: center;">Worked AS Software Trainee</p>
-                        <p style="text-align: center; color: rgb(170, 158, 158);">HDML,CSS</p>
-                        <p style="text-align: center; color: rgb(170, 158, 158);">Bootstrap,</p>
-                        <p style="text-align: center; color: rgb(170, 158, 158);">JavaScript</p>
-                        <p style="text-align: center; color:  rgb(170, 158, 158);">from july 2023 to Sep 2023</p><br>
-                    </div>
+
+                <div class="col-sm-6" id="experience-col">
+                    <i id="resumeicon" class="fa-solid fa-briefcase">
+                        <span style="font-family: 'Cormorant SC', serif; color:  rgb(255, 255, 112);">Experience</span>
+                    </i>
+                    <div class="vl" style="box-shadow: -30px 10px 50px #17203a;" id="experience-content"></div>
                 </div>
             </div>
         </div>
     </div>
     <hr style="color:  #17203a; height: 2px; margin-top: 30px;   margin-bottom: -90px;">
 
-    
+
     <!-- Portfolio of Achievements -->
     <div class="container">
         <div class="row justify-content-around">
@@ -315,82 +213,13 @@
                 <h1 id="protfolio">Portfolio of Achievements</h1>
             </div>
         </div>
-
-        <div class="row justify-content-around">
-            <div class="card ef">
-                <div class="card-body">
-                    <img src="1739120050045.jpg" width="100%" alt="">
-                    <hr>
-                    <p style="text-align: center; margin: 0px;">Certificate from my internship at Hilife.ai.</p>
-                </div>
-            </div>
-
-            <div class="card ef">
-                <div class="card-body">
-                    <img src="IMG_20241125_123353.jpg" width="100%" alt="">
-                    <hr>
-                    <p style="text-align: center; margin: 0px;">Achieved during Hack24 hackathon event.</p>
-                </div>
-            </div>
-
-            <div class="card ef">
-                <div class="card-body">
-                    <img src="./IMG_20250225_223052.jpg" width="100%" alt="">
-                    <hr>
-                    <p style="text-align: center; margin: 0px;">Earned from MIT's Math Geek competition showcasing
-                        problem-solving skills.</p>
-                </div>
-            </div>
-
-            <div class="card ef">
-                <div class="card-body">
-                    <img src="./Arunachalam A.png" width="100%" alt="">
-                    <hr>
-                    <p style="text-align: center; margin: 0px;">Participation certificate from the Blueprint event by
-                        Coderizz.</p>
-                </div>
-            </div>
-
-            <div class="card ef">
-                <div class="card-body">
-                    <img src="arunashalam.png" width="100%" alt="">
-                    <hr>
-                    <p style="text-align: center; margin: 0px;">Hands-on learning in Game Development at Coderizz
-                        workshop.</p>
-                </div>
-            </div>
-
-            <div class="card ef">
-                <div class="card-body">
-                    <img src="./Arunachalam.A_page-0001.jpg" width="100%" alt="">
-                    <hr>
-                    <p style="text-align: center; margin: 0px;">Certificate from Vecoders' Frontend Forensics tech
-                        event.</p>
-                </div>
-            </div>
-
-            <div class="card ef">
-                <div class="card-body">
-                    <img src="IMG_20250209_225552.jpg" width="100%" alt="">
-                    <hr>
-                    <p style="text-align: center; margin: 0px;">Outstanding solution in Women Empowerment track –
-                        HACKZ24 by CSEA, CEG & Temenos (2024).</p>
-                </div>
-            </div>
-
-            <div class="card ef">
-                <div class="card-body">
-                    <img src="1739121129585.jpg" width="100%" alt="">
-                    <hr>
-                    <p style="text-align: center; margin: 0px;">Won 1st prize for a short film on nature.</p>
-                </div>
-            </div>
-        </div>
+        <div class="row justify-content-around" id="achievementCards"></div>
     </div>
     <hr style="color:  #17203a; height: 2px; margin-bottom: -60px; margin-top: 30px;">
 
-    
+
     <!--CONTACT-->
+
     <div class="container">
         <div class="row justify-content-around">
             <div class="col-sm-3">
@@ -451,6 +280,10 @@
             <h5 style="text-align: center;">© 2022. Designed by ArunachalaM.</h5>
         </div>
     </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
